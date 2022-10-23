@@ -55,7 +55,7 @@ main {
 main .container_home {
   display: flex;
   justify-content: space-between;
-  padding-top: 146px;
+  padding-top: 6.25rem;
 }
 
 main .content_home {
@@ -89,15 +89,15 @@ main .content_home {
 
 .container_left > h1 {
   width: 620px;
-  height: 222px;
-  font-size: 64px;
+  height: 29.94%;
+  font-size: 4vw;
   font-weight: 700;
   margin-bottom: 34px;
 }
 
 .container_left > p {
   width: 470px;
-  height: 120px;
+  height: 13%;
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 40px;
@@ -143,8 +143,9 @@ main .content_home a > img {
 
 .social_links {
   display: flex;
-  margin-top: 82px;
-  padding: 0 0 0 146px;
+  margin-top: 44px;
+  position: absolute;
+  z-index: 10;
 }
 
 .social_links > a {
@@ -156,6 +157,7 @@ main .content_home a > img {
   background-color: white;
   border-radius: 25px;
   margin-right: 15px;
+  transition: all 0.5s ease;
 }
 
 main .social_links a > svg {
@@ -174,27 +176,11 @@ main .social_links a:hover svg {
 .container .wave {
   position: absolute;
   width: 100%;
-  height: 311px;
-  background-image: url("../assets/wave.svg");
+  height: 848px;
+  background-image: url(/src/assets/wave.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -160px;
-}
-
-.container .rectangle {
-  width: 100%;
-  height: 186px;
-  background-color: var(--blue);
-  margin-top: 150px;
-}
-
-.container .wave_reverse {
-  position: absolute;
-  width: 100%;
-  height: 311px;
-  background-image: url("../assets/wave_down.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin-top: -372px;
 }
 
 .resto {
