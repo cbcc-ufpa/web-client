@@ -10,6 +10,12 @@ import Linkedin from "../assets/linkedin.svg";
 import Facebook from "../assets/facebook.svg";
 import IA from "../assets/ia_perfil.svg";
 import Wave from "../assets/wave.svg";
+import Network from '../assets/network.svg'
+import Devops from '../assets/devops.svg'
+import Dev from '../assets/dev.svg'
+import AI from '../assets/ia.svg'
+import Data from '../assets/data.svg'
+import Shild from '../assets/shild.svg'
 
 const Home = () => {
   return (
@@ -102,7 +108,52 @@ const Home = () => {
 
         <div className="wave"></div>
 
-        <div className="resto"></div>
+        <div className="main_areas">
+          <div className="phone"></div>
+          
+          <div className="info_areas">
+              <div className='areas_left'>
+                  <div>
+                      <img src={Network} alt="Network Icon" />
+                      <h2>Redes de Computadores</h2>
+                      <p>Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons</p>
+                  </div>
+
+                  <div>
+                      <img src={Devops} alt="Network Icon" />
+                      <h2>DevOps</h2>
+                      <p>Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons</p>
+                  </div>
+
+                  <div>
+                      <img src={Dev} alt="Network Icon" />
+                      <h2>Programação</h2>
+                      <p>Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons</p>
+                  </div>
+              </div>
+
+              <div className="areas_right">
+                  <div>
+                      <img src={AI} alt="Network Icon" />
+                      <h2>Inteligência Artificial</h2>
+                      <p>Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons</p>
+                  </div>
+
+                  <div>
+                      <img src={Data} alt="Network Icon" />
+                      <h2>Ciência de Dados</h2>
+                      <p>Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons</p>
+                  </div>
+
+                  <div>
+                      <img src={Shild} alt="Network Icon" />
+                      <h2>Segurança da Informação</h2>
+                      <p>Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+        
       </main>
     </div>
   );

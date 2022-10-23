@@ -78,7 +78,7 @@ main .content_home {
   margin: 13px;
 }
 
-.localization > P {
+.localization > p {
   font-size: 12px;
   font-weight: 600;
 }
@@ -183,8 +183,58 @@ main .social_links a:hover svg {
   margin-top: -372px;
 }
 
-.resto {
-  width: 100%;
-  height: 1500px;
-  background-color: var(--white);
+.main_areas{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 2000px;
+    background-color: var(--white);
+    padding: 143px 176px 0 176px;
+}
+
+.phone, .info_areas{
+  margin-top: 800px;
+}
+
+.main_areas .phone{
+    min-width: 289px;
+    height: 627px;
+    border: 15px solid black;
+    border-radius: 23px;
+    margin-right: 100px;
+}
+
+.main_areas .info_areas{
+    display: flex;
+}
+
+.main_areas .info_areas > div{
+    width: 255px;
+    height: 175px;
+}
+
+.areas_right > div, .areas_left > div{
+    margin-bottom: 60px;
+    min-height: 176px;
+}
+
+.areas_right div > img, .areas_left div > img{
+    width: 44px;
+    height: 44px;
+    margin-bottom: 16px;
+}
+
+.areas_right div > h2, .areas_left div > h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #1A1A1A;
+    margin-bottom: 7px;
+}
+
+.areas_right div > p, .areas_left div > p{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 26px;
+    color: #767676;
 }
