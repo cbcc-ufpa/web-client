@@ -1,0 +1,56 @@
+:root{
+    --gray: #767676;
+    --softGray: #D2D2D2;
+    --lilac: #dbd9f5;
+}
+
+.comment_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 330px;
+    height: 330px;
+    border: 2px solid var(--softGray);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 0 30px;
+}
+
+.comment_card > p{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--gray);
+}
+
+.user_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--lilac);
+    margin-right: 20px;
+}
+
+.user_info h2{
+    width: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1A1A1A;
+}
+
+.user_info p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #767676;
+}
+

@@ -1,21 +1,23 @@
 import React from "react";
 import "./Home.css";
+import AreaCard from "./AreaCard";
+import CommentsCard from "./CommentsCard";
+import MemberCard from "./MemberCard";
 
 //SVG's
 import Lupa from "../assets/lupa.svg";
 import Star from "../assets/star.svg";
 import Arrow from "../assets/arrow.svg";
-import Google from "../assets/google.svg";
-import Linkedin from "../assets/linkedin.svg";
-import Facebook from "../assets/facebook.svg";
+import ArrowLilac from "../assets/arrow_lilac.svg";
 import IA from "../assets/ia_perfil.svg";
-import Wave from "../assets/wave.svg";
 import Network from '../assets/network.svg'
 import Devops from '../assets/devops.svg'
 import Dev from '../assets/dev.svg'
 import AI from '../assets/ia.svg'
 import Data from '../assets/data.svg'
 import Shild from '../assets/shild.svg'
+import User from '../assets/user.svg'
+import Map from '../assets/map.png'
 
 const Home = () => {
   return (
@@ -112,48 +114,91 @@ const Home = () => {
           <div className="phone"></div>
           
           <div className="info_areas">
-              <div className='areas_left'>
-                  <div>
-                      <img src={Network} alt="Network Icon" />
-                      <h2>Redes de Computadores</h2>
-                      <p>Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons</p>
-                  </div>
-
-                  <div>
-                      <img src={Devops} alt="Network Icon" />
-                      <h2>DevOps</h2>
-                      <p>Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons</p>
-                  </div>
-
-                  <div>
-                      <img src={Dev} alt="Network Icon" />
-                      <h2>Programação</h2>
-                      <p>Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons</p>
-                  </div>
+              <div>
+                <AreaCard icon={Network} title={"Redes de Computadores"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
+                <AreaCard icon={Devops} title={"DevOps"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
+                <AreaCard icon={Dev} title={"Programação"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
               </div>
 
-              <div className="areas_right">
-                  <div>
-                      <img src={AI} alt="Network Icon" />
-                      <h2>Inteligência Artificial</h2>
-                      <p>Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons</p>
-                  </div>
-
-                  <div>
-                      <img src={Data} alt="Network Icon" />
-                      <h2>Ciência de Dados</h2>
-                      <p>Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons</p>
-                  </div>
-
-                  <div>
-                      <img src={Shild} alt="Network Icon" />
-                      <h2>Segurança da Informação</h2>
-                      <p>Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons</p>
-                  </div>
+              <div>
+                <AreaCard icon={AI} title={"Inteligência Artificial"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
+                <AreaCard icon={Data} title={"Ciência de Dados"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
+                <AreaCard icon={Shild} title={"Segurança da Informação"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
               </div>
           </div>
         </div>
+
+        <div className="big_circle"></div>
+
+        <div className="main_questions">
+          <p>Centro Acadêmico</p>
+          <h1>Saiba com quem tirar dúvidas</h1>
+          <div className="up">
+            <MemberCard memberPhoto={User} memberName={"Samuel Willson"} memberJob={"Digital Artist"} />
+            <MemberCard memberPhoto={User} memberName={"Angelina Hellhop"} memberJob={"UX/UI Designer"} />
+            <MemberCard memberPhoto={User} memberName={"Kyle Generale"} memberJob={"Photographer"} />
+            <MemberCard memberPhoto={User} memberName={"Joey Taylor"} memberJob={"Chief SMM"} />
+          </div>
+
+          <div className="down">
+          <MemberCard memberPhoto={User} memberName={"Samuel Willson"} memberJob={"Digital Artist"} />
+          <MemberCard memberPhoto={User} memberName={"Angelina Hellhop"} memberJob={"UX/UI Designer"} />
+          <MemberCard memberPhoto={User} memberName={"Kyle Generale"} memberJob={"Photographer"} />
+          <MemberCard memberPhoto={User} memberName={"Joey Taylor"} memberJob={"Chief SMM"} />
+            
+          </div>
+        </div>
+
+        <div className="big_circle2"></div>
+        <div className="small_cicle"></div>
         
+        <div className="main_comments">
+          <h1>Comentários de recém formados em CBCC</h1>
+          <div className="comments_section">
+            <div className="arrow_right">
+                <img src={ArrowLilac} alt="Arrow Icon" />
+            </div>
+
+            <div className="comments">
+              <CommentsCard 
+              comment={"Antes eu sofriah :,( ... agora eu sou friah"}
+              userName={"Gótica Taradah"}
+              userJob={"Digital Artist at Digital Group"}
+              userPhoto={User}/>
+
+              <CommentsCard 
+              comment={"Puta, vagabunda, intere$$eira. Eu fazendo meu trabalho escutando só besteira"}
+              userName={"Luiza Sonza"}
+              userJob={"UX Designer at Digital Group"}
+              userPhoto={User}/>
+
+              <CommentsCard 
+              comment={"Antes eu não era nada, agora sou Uber e garanto o pão de cada dia"}
+              userName={"Resque"}
+              userJob={"Photographer at Digital Group"}
+              userPhoto={User}/>
+            </div>
+
+            <div className="arrow_left">
+                <img src={ArrowLilac} alt="Arrow Icon" />
+            </div>
+          </div>
+        </div>
+
+        <div className="main_map">
+          <h1>Mapa da Casa do Caralho aqui!!!</h1>
+          <img src={Map} alt="Map image" />
+        </div>
+
+        <div className="main_claim">
+          <h1>Tem alguma ideia ou reclamação?</h1>
+          <p>Nos diga sua opnião no que podemos fazer para melhorar o curso. Problemas com docentes, laboratórios, sugestão de atividade para o Centro acadêmico, tudo é bem vindo aqui :D</p>
+          <input type="text" className="user_name" placeholder="Username"/>
+          <textarea name="" id="" cols="30" rows="10" className="user_comment">Escreva aqui...</textarea>
+          <p id="p_warning">Essa mensagem é anônima, não se preocupe, se identifique se quiser</p>
+          <button>Enviar Feedback</button>
+        </div>
+
       </main>
     </div>
   );
