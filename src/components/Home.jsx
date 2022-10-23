@@ -195,7 +195,16 @@ const Home = () => {
       <div className="main_claim">
         <h1>Tem alguma ideia ou reclamação?</h1>
         <p>Nos diga sua opnião no que podemos fazer para melhorar o curso. Problemas com docentes, laboratórios, sugestão de atividade para o Centro acadêmico, tudo é bem vindo aqui :D</p>
-        <input type="text" className="user_name" placeholder="Username" />
+        <div className="username_typecomment">
+          <input type="text" className="user_name" placeholder="Username" />
+          <select>
+            <option value="" disabled selected>Selecione o tipo do comentário</option>
+            <option value="valor1">Feedback</option>
+            <option value="valor2">Sugestão de Atividade</option>
+            <option value="valor3">Corpo Docente</option>
+            <option value="valor3">Infraestrutura</option>
+          </select>
+        </div>
         <textarea name="" id="" cols="30" rows="10" className="user_comment" placeholder="Escreva aqui..."></textarea>
         <p id="p_warning">Essa mensagem é anônima, não se preocupe, se identifique se quiser</p>
         <button onClick={() => alert("Mensagem enviada")}>Enviar Feedback</button>

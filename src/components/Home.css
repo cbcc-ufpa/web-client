@@ -347,6 +347,44 @@ main .social_links a:hover svg {
   text-align: center;
 }
 
+.username_typecomment {
+  width: 750px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.username_typecomment-estiloso select { /* <select> */
+  background: transparent; /* importante para exibir o novo ícone */
+  width: 289px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 48px;
+} 
+
+.username_typecomment select {
+  width: 289px;
+  height: 48px;
+  border-radius: 6px;
+  border: 1px solid var(--softGray);
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--gray);
+  padding-left: 0.5rem;
+}
+
+.username_typecomment select:focus {
+  box-shadow: 0 0 0 0;
+  border: 1px solid var(--softGray);
+  outline: 0;
+}
+
 .user_name{
   width: 255px;
   height: 48px;
@@ -357,20 +395,17 @@ main .social_links a:hover svg {
   background-repeat: no-repeat;
   background-position: 16px 13px;
   margin-bottom: 24px;
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--gray);
 }
 
 .user_name:focus{
   box-shadow: 0 0 0 0;
   border: 1px solid var(--softGray);
   outline: 0;
-}
-
-.user_name::placeholder{
-  font-family: var(--font);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: var(--gray);
 }
 
 .user_comment{
