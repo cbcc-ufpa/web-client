@@ -196,9 +196,9 @@ const Home = () => {
         <h1>Tem alguma ideia ou reclamação?</h1>
         <p>Nos diga sua opnião no que podemos fazer para melhorar o curso. Problemas com docentes, laboratórios, sugestão de atividade para o Centro acadêmico, tudo é bem vindo aqui :D</p>
         <input type="text" className="user_name" placeholder="Username" />
-        <textarea name="" id="" cols="30" rows="10" className="user_comment">Escreva aqui...</textarea>
+        <textarea name="" id="" cols="30" rows="10" className="user_comment" placeholder="Escreva aqui..."></textarea>
         <p id="p_warning">Essa mensagem é anônima, não se preocupe, se identifique se quiser</p>
-        <button>Enviar Feedback</button>
+        <button onClick={() => alert("Mensagem enviada")}>Enviar Feedback</button>
       </div>
     </div>
   );
