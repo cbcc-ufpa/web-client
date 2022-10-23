@@ -120,6 +120,7 @@ main .content_home {
   border: none;
   border-radius: 6px;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 .container_left > a:visited {
@@ -128,8 +129,9 @@ main .content_home {
 
 .container_left > a:hover {
   background-color: var(--softPurple);
-}
-
+  height: 70px;
+  }
+  
 main .content_home a > img {
   width: 22px;
   height: 22px;
@@ -410,6 +412,13 @@ main .social_links a:hover svg {
   line-height: 26px;
   color: white;
   margin-bottom: 53px;
+  transition: all 0.2s ease;
+}
+
+.main_claim button:hover{
+  cursor: pointer;
+  width: 260px;
+  height: 60px;
 }
 
 .big_circle{
