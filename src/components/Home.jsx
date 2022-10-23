@@ -110,96 +110,96 @@ const Home = () => {
 
         <div className="wave"></div>
 
-        <div className="main_areas">
-          <div className="phone"></div>
-          
-          <div className="info_areas">
-              <div>
-                <AreaCard icon={Network} title={"Redes de Computadores"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
-                <AreaCard icon={Devops} title={"DevOps"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
-                <AreaCard icon={Dev} title={"Programação"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
-              </div>
+      </main>
 
-              <div>
-                <AreaCard icon={AI} title={"Inteligência Artificial"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
-                <AreaCard icon={Data} title={"Ciência de Dados"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
-                <AreaCard icon={Shild} title={"Segurança da Informação"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
-              </div>
+      <div className="main_areas">
+        <div className="phone"></div>
+
+        <div className="info_areas">
+          <div>
+            <AreaCard icon={Network} title={"Redes de Computadores"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
+            <AreaCard icon={Devops} title={"DevOps"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
+            <AreaCard icon={Dev} title={"Programação"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
+          </div>
+
+          <div>
+            <AreaCard icon={AI} title={"Inteligência Artificial"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
+            <AreaCard icon={Data} title={"Ciência de Dados"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
+            <AreaCard icon={Shild} title={"Segurança da Informação"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
           </div>
         </div>
+      </div>
 
-        <div className="big_circle"></div>
+      <div className="big_circle"></div>
 
-        <div className="main_questions">
-          <p>Centro Acadêmico</p>
-          <h1>Saiba com quem tirar dúvidas</h1>
-          <div className="up">
-            <MemberCard memberPhoto={User} memberName={"Samuel Willson"} memberJob={"Digital Artist"} />
-            <MemberCard memberPhoto={User} memberName={"Angelina Hellhop"} memberJob={"UX/UI Designer"} />
-            <MemberCard memberPhoto={User} memberName={"Kyle Generale"} memberJob={"Photographer"} />
-            <MemberCard memberPhoto={User} memberName={"Joey Taylor"} memberJob={"Chief SMM"} />
-          </div>
-
-          <div className="down">
+      <div className="main_questions">
+        <p>Centro Acadêmico</p>
+        <h1>Saiba com quem tirar dúvidas</h1>
+        <div className="up">
           <MemberCard memberPhoto={User} memberName={"Samuel Willson"} memberJob={"Digital Artist"} />
           <MemberCard memberPhoto={User} memberName={"Angelina Hellhop"} memberJob={"UX/UI Designer"} />
           <MemberCard memberPhoto={User} memberName={"Kyle Generale"} memberJob={"Photographer"} />
           <MemberCard memberPhoto={User} memberName={"Joey Taylor"} memberJob={"Chief SMM"} />
-            
-          </div>
         </div>
 
-        <div className="big_circle2"></div>
-        <div className="small_cicle"></div>
-        
-        <div className="main_comments">
-          <h1>Comentários de recém formados em CBCC</h1>
-          <div className="comments_section">
-            <div className="arrow_right">
-                <img src={ArrowLilac} alt="Arrow Icon" />
-            </div>
+        <div className="down">
+          <MemberCard memberPhoto={User} memberName={"Samuel Willson"} memberJob={"Digital Artist"} />
+          <MemberCard memberPhoto={User} memberName={"Angelina Hellhop"} memberJob={"UX/UI Designer"} />
+          <MemberCard memberPhoto={User} memberName={"Kyle Generale"} memberJob={"Photographer"} />
+          <MemberCard memberPhoto={User} memberName={"Joey Taylor"} memberJob={"Chief SMM"} />
 
-            <div className="comments">
-              <CommentsCard 
+        </div>
+      </div>
+
+      <div className="big_circle2"></div>
+      <div className="small_cicle"></div>
+
+      <div className="main_comments">
+        <h1>Comentários de recém formados em CBCC</h1>
+        <div className="comments_section">
+          <div className="arrow_right">
+            <img src={ArrowLilac} alt="Arrow Icon" />
+          </div>
+
+          <div className="comments">
+            <CommentsCard
               comment={"Antes eu sofriah :,( ... agora eu sou friah"}
               userName={"Gótica Taradah"}
               userJob={"Digital Artist at Digital Group"}
-              userPhoto={User}/>
+              userPhoto={User} />
 
-              <CommentsCard 
+            <CommentsCard
               comment={"Puta, vagabunda, intere$$eira. Eu fazendo meu trabalho escutando só besteira"}
               userName={"Luiza Sonza"}
               userJob={"UX Designer at Digital Group"}
-              userPhoto={User}/>
+              userPhoto={User} />
 
-              <CommentsCard 
+            <CommentsCard
               comment={"Antes eu não era nada, agora sou Uber e garanto o pão de cada dia"}
               userName={"Resque"}
               userJob={"Photographer at Digital Group"}
-              userPhoto={User}/>
-            </div>
+              userPhoto={User} />
+          </div>
 
-            <div className="arrow_left">
-                <img src={ArrowLilac} alt="Arrow Icon" />
-            </div>
+          <div className="arrow_left">
+            <img src={ArrowLilac} alt="Arrow Icon" />
           </div>
         </div>
+      </div>
 
-        <div className="main_map">
-          <h1>Mapa da Casa do Caralho aqui!!!</h1>
-          <img src={Map} alt="Map image" />
-        </div>
+      <div className="main_map">
+        <h1>Mapa da Casa do Caralho aqui!!!</h1>
+        <img src={Map} alt="Map image" />
+      </div>
 
-        <div className="main_claim">
-          <h1>Tem alguma ideia ou reclamação?</h1>
-          <p>Nos diga sua opnião no que podemos fazer para melhorar o curso. Problemas com docentes, laboratórios, sugestão de atividade para o Centro acadêmico, tudo é bem vindo aqui :D</p>
-          <input type="text" className="user_name" placeholder="Username"/>
-          <textarea name="" id="" cols="30" rows="10" className="user_comment">Escreva aqui...</textarea>
-          <p id="p_warning">Essa mensagem é anônima, não se preocupe, se identifique se quiser</p>
-          <button>Enviar Feedback</button>
-        </div>
-
-      </main>
+      <div className="main_claim">
+        <h1>Tem alguma ideia ou reclamação?</h1>
+        <p>Nos diga sua opnião no que podemos fazer para melhorar o curso. Problemas com docentes, laboratórios, sugestão de atividade para o Centro acadêmico, tudo é bem vindo aqui :D</p>
+        <input type="text" className="user_name" placeholder="Username" />
+        <textarea name="" id="" cols="30" rows="10" className="user_comment">Escreva aqui...</textarea>
+        <p id="p_warning">Essa mensagem é anônima, não se preocupe, se identifique se quiser</p>
+        <button>Enviar Feedback</button>
+      </div>
     </div>
   );
 };
