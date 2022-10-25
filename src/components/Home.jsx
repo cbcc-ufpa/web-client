@@ -33,7 +33,7 @@ const Home = () => {
           <a href="https://github.com/jonas-al">Pricing</a>
           <a href="https://github.com/jonas-al">About Us</a>
 
-          <img src={Lupa} alt="Lupa Icon" />
+          {/*<img src={Lupa} alt="LupaIcon" />*/}
         </div>
       </header>
 
@@ -140,15 +140,15 @@ const Home = () => {
         <div className="up">
           <MemberCard memberPhoto={User} memberName={"Samuel Willson"} memberJob={"Digital Artist"} />
           <MemberCard memberPhoto={User} memberName={"Angelina Hellhop"} memberJob={"UX/UI Designer"} />
-          <MemberCard memberPhoto={User} memberName={"Kyle Generale"} memberJob={"Photographer"} />
-          <MemberCard memberPhoto={User} memberName={"Joey Taylor"} memberJob={"Chief SMM"} />
+          {/*<MemberCard memberPhoto={User} memberName={"Kyle Generale"} memberJob={"Photographer"} />
+          <MemberCard memberPhoto={User} memberName={"Joey Taylor"} memberJob={"Chief SMM"} />*/}
         </div>
 
         <div className="down">
           <MemberCard memberPhoto={User} memberName={"Samuel Willson"} memberJob={"Digital Artist"} />
           <MemberCard memberPhoto={User} memberName={"Angelina Hellhop"} memberJob={"UX/UI Designer"} />
-          <MemberCard memberPhoto={User} memberName={"Kyle Generale"} memberJob={"Photographer"} />
-          <MemberCard memberPhoto={User} memberName={"Joey Taylor"} memberJob={"Chief SMM"} />
+          {/*<MemberCard memberPhoto={User} memberName={"Kyle Generale"} memberJob={"Photographer"} />
+          <MemberCard memberPhoto={User} memberName={"Joey Taylor"} memberJob={"Chief SMM"} />*/}
 
         </div>
       </div>
@@ -163,11 +163,11 @@ const Home = () => {
             <img src={ArrowLilac} alt="Arrow Icon" />
           </div>
 
-          <CommentsCard
+          {/*<CommentsCard
             comment={"Antes eu sofriah :,( ... agora eu sou friah"}
             userName={"Gótica Taradah"}
             userJob={"Digital Artist at Digital Group"}
-            userPhoto={User} />
+    userPhoto={User} />*/}
 
           {/*<CommentsCard 
             comment={"Puta, vagabunda, intere$$eira. Eu fazendo meu trabalho escutando só besteira"}

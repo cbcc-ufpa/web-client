@@ -28,12 +28,18 @@ header {
   background-color: var(--purple);
 }
 
-header .header_icon {
-  width: 67px;
+header .header_icon{
+  min-width: 67px;
   height: 53px;
   border-radius: 17px;
   background-color: var(--white);
   margin-right: 20px;
+}
+
+header .header_links{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 header .header_links a {
@@ -41,7 +47,7 @@ header .header_links a {
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
-  margin-right: 37.5px;
+  margin-left: 30px;
 }
 
 header .header_links img {
@@ -50,26 +56,29 @@ header .header_links img {
   margin-left: 97px;
 }
 
-main {
-  justify-content: space-between;;
+main{
+  justify-content: space-between;
 }
 
-main .container_home {
+main .container_home{
   display: flex;
   justify-content: space-between;
   background-color: var(--purple);
   color: white;
-  padding: 146px 144px;
+  padding: 100px 10px;
 }
 
 .wave{
   width: 100%;
-  margin-top: -410px;
+  margin-top: -290px;
+}
+
+.hero_rigth{
+  margin: auto;
 }
 
 .hero_rigth img{
-  max-width: 100%;
-  margin-top: 10px;
+  width: 110%;
 }
 
 .localization {
@@ -94,13 +103,13 @@ main .container_home {
 }
 
 .content_home {
+  margin: 0 auto;
   width: 50%;
-  margin-bottom: 200px;
 }
 
 .content_home > h1 {
   max-width: 620px;
-  font-size: 64px;
+  font-size: 4.8rem;
   font-weight: 700;
   margin-bottom: 50px;
 }
@@ -185,19 +194,18 @@ main .social_links a:hover svg {
     max-width: 100%;
     background-color: var(--white);
     padding: 0px 176px;
-    margin-top: -11.875rem;
 }
 
 .phone, .info_areas{
-  margin: 378px 0 160px 0;
+  margin: 100px 0 160px 0;
 }
 
 .main_areas .phone{
-    min-width: 289px;
+    width: 289px;
     height: 627px;
     border: 15px solid black;
+    margin-right: 50px;
     border-radius: 23px;
-    margin-right: 100px;
 }
 
 .main_areas .info_areas{
@@ -205,7 +213,10 @@ main .social_links a:hover svg {
 }
 
 .info_cards{
+  display: flex;
+  flex-direction: column;
   max-width: 300px;
+  margin-right: 20px;
 }
 
 .main_questions{
@@ -284,10 +295,12 @@ main .social_links a:hover svg {
 }
 
 .main_map{
-  width: 600px;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: var(--white);
-  margin-bottom: 100px;
+  margin: 0 20px 100px 20px;
 }
 
 .main_map h1{
@@ -299,7 +312,7 @@ main .social_links a:hover svg {
 }
 
 .main_map img{
-  width: 600px;
+  max-width: 100%;
   height: 375px;
 }
 
@@ -310,6 +323,7 @@ main .social_links a:hover svg {
   margin-top: 140px;
   text-align: center;
   margin: 0 15px;
+  padding: 0 15px;
 }
 
 .main_claim h1{
@@ -331,14 +345,14 @@ main .social_links a:hover svg {
 }
 
 .username_typecomment {
-  width: 750px;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .username_typecomment-estiloso select { /* <select> */
   background: transparent; /* importante para exibir o novo ícone */
-  width: 289px;
+  width: 50%;
   padding: 5px;
   font-size: 16px;
   line-height: 1;
@@ -348,7 +362,7 @@ main .social_links a:hover svg {
 } 
 
 .username_typecomment select {
-  max-width: 289px;
+  max-width: 50%;
   height: 48px;
   border-radius: 6px;
   border: 1px solid var(--softGray);
@@ -367,7 +381,7 @@ main .social_links a:hover svg {
 }
 
 .user_name{
-  max-width: 255px;
+  max-width: 50%;
   height: 48px;
   border: 1px solid var(--softGray);
   padding: 0 0 0 36px;
@@ -381,6 +395,7 @@ main .social_links a:hover svg {
   font-size: 16px;
   line-height: 26px;
   color: var(--gray);
+  margin-right: 10px;
 }
 
 .user_name:focus{
@@ -467,6 +482,24 @@ main .social_links a:hover svg {
   background-color: var(--softPurple);
 }
 
+@media (max-width: 1600px){
+  .wave{
+    margin-top: -280px;
+  }
+}
+
+@media (max-width: 1400px){
+  .wave{
+    margin-top: -260px;
+  }
+}
+
+@media (max-width: 1200px){
+  .wave{
+    margin-top: -245px;
+  }
+}
+
 @media (max-width: 1100px){
   .hero_rigth img{
     width: 0;
@@ -476,7 +509,12 @@ main .social_links a:hover svg {
     padding: 20px;
   }
 
+  main .container_home{
+    padding-bottom: 200px;
+  }
+
   .wave{
+    margin-top: -160px;
     margin-bottom: 10px;
   }
 
@@ -491,9 +529,9 @@ main .social_links a:hover svg {
   .main_areas .phone{
     align-items: center;
     justify-content: none;
-    width: 289px;
-    height: 500px;
-    margin-right: 20px;
+    width: 250px;
+    height: 400px;
+    margin-right: 0;
     margin-bottom: 0;
   }
 
@@ -508,11 +546,78 @@ main .social_links a:hover svg {
 
 @media(max-width: 750px){
   .user_comment{
-    width: 575px;
+    width: 525px;
   }
 }
 
-/*@midia(max-width: 414px){
-  
-}*/
+@media(max-width: 630px){
+  .user_comment{
+    width: 425px;
+  }
 
+  .wave{
+    margin-top: -100px;
+  }
+
+  .main_areas{
+    padding: 0 0 0 20px;
+  }
+}
+
+@media(max-width: 550px){
+  main .container_home{
+    padding-left: 0;
+  }
+
+  .content_home > h1 {
+    font-size: 3.5rem;
+  }
+
+  header .header_links a{
+    margin-left: 10px;
+  }
+
+  header .header_icon{
+    margin-right: 0px;
+  }
+
+  .user_comment{
+    width: 350px;
+  }
+  
+  .main_areas .phone{
+    width: 219px;
+    height: 375px;
+  }
+
+  .main_map img{
+    max-width: 100%;
+    height: 330px;
+  }
+
+}
+
+@media(max-width: 400px){
+  header{
+    padding: 10px;
+  }
+
+  .content_home > h1 {
+    font-size: 3.2rem;
+  }
+
+  .arrow_right, .arrow_left{
+    min-width: 35px;
+    min-height: 35px;
+  }
+
+  .arrow_right img, .arrow_left img{
+    width: 20px;
+  }
+
+  .main_map img{
+    max-width: 100%;
+    height: 250px;
+  }
+
+}

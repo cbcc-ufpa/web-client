@@ -1,6 +1,9 @@
 .area_card{
-    width: 255px;
-    min-height: 176px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 255px;
+    min-height: 193px;
     margin-bottom: 60px;
 }
 
