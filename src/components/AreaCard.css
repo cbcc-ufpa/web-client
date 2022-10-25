@@ -13,11 +13,16 @@
     margin-bottom: 16px;
 }
 
-.area_card h2{
+.area_card a{
     font-size: 20px;
     font-weight: 500;
     color: #1A1A1A;
     margin-bottom: 7px;
+    text-decoration: none;
+}
+
+.area_card a:hover{
+    text-decoration: underline;
 }
 
 .area_card p{

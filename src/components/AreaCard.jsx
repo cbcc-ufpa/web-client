@@ -4,7 +4,7 @@ const AreaCard = ({icon, title, text}) => {
   return (
     <div className="area_card">
         <img src={icon} alt="Icon" />
-        <h2>{title}</h2>
+        <a href="#">{title}</a>
         <p>{text}</p>
     </div>
   )

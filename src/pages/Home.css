@@ -191,17 +191,14 @@ main .social_links a:hover svg {
 .main_areas{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 100%;
     background-color: var(--white);
-    padding: 0px 176px;
-}
-
-.phone, .info_areas{
-  margin: 100px 0 160px 0;
+    padding: 100px 176px;
 }
 
 .main_areas .phone{
-    width: 289px;
+    min-width: 289px;
     height: 627px;
     border: 15px solid black;
     margin-right: 50px;
@@ -530,7 +527,7 @@ main .social_links a:hover svg {
     align-items: center;
     justify-content: none;
     width: 250px;
-    height: 400px;
+    height: 500px;
     margin-right: 0;
     margin-bottom: 0;
   }
@@ -586,8 +583,8 @@ main .social_links a:hover svg {
   }
   
   .main_areas .phone{
-    width: 219px;
-    height: 375px;
+    min-width: 200px;
+    height: 400px;
   }
 
   .main_map img{
@@ -619,5 +616,4 @@ main .social_links a:hover svg {
     max-width: 100%;
     height: 250px;
   }
-
 }

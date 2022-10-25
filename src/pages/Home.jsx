@@ -1,8 +1,8 @@
 import React from "react";
 import "./Home.css";
-import AreaCard from "./AreaCard";
-import CommentsCard from "./CommentsCard";
-import MemberCard from "./MemberCard";
+import AreaCard from "../components/AreaCard";
+import CommentsCard from "../components/CommentsCard";
+import MemberCard from "../components/MemberCard";
 
 //SVG's
 import Lupa from "../assets/lupa.svg";
