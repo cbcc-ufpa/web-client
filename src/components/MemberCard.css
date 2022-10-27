@@ -36,3 +36,9 @@
     line-height: 26px;
     color: var(--gray);
 }
+
+@media(max-width: 350px){
+    .member_card{
+        min-width: 140px;
+    }
+}
