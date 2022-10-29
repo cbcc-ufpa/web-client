@@ -24,6 +24,7 @@ import Map from '../assets/map.png'
 import WaveUp from '../assets/wave_up.svg'
 import WaveDown from '../assets/wave_down.svg'
 import Cicle from '../assets/cicle.svg'
+import LittleCicle from '../assets/little_cicle.svg'
 import Logo from '../assets/logo.png'
 
 const Home = () => {
@@ -158,8 +159,10 @@ const Home = () => {
         </div>
       </div>
 
-      <img id="cicle_2" src={Cicle} alt="Cicle" />
-      <img id="cicle_3" src={Cicle} alt="Cicle" />
+      <div className="cicle">
+        <img id="cicle_3" src={LittleCicle} alt="Cicle" />
+        <img id="cicle_2" src={Cicle} alt="Cicle" />
+      </div>
 
       <div className="main_comments">
         <h1>Comentários de recém formados em CBCC</h1>

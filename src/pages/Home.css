@@ -232,7 +232,7 @@ main .social_links a:hover svg {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 250px;
+  margin: 250px 0 10px 0;
 }
 
 .main_questions p{
@@ -263,7 +263,7 @@ main .social_links a:hover svg {
 .main_comments{
   text-align: center;
   background-color: var(--white);
-  margin: 135px 25px 200px 25px;
+  margin: 160px 25px 200px 25px;
 }
 
 .main_comments > h1{
@@ -461,21 +461,26 @@ main .social_links a:hover svg {
 
 #cicle_1{
   position: absolute;
-  --width: clamp(100px, 200px + 10vw, 360px);
+  --width: clamp(100px, 10px + 8vw, 360px);
   width: var(--width);
-  margin-left: calc(var(--width) / -2);
+  rotate: 180deg;
+}
+
+.cicle{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  margin-top: -50px;  
 }
 
 #cicle_2{
-  width: 100px;
-  margin-left: calc(-125px + 30vw);
+  --width: clamp(100px, 10px + 8vw, 360px);
+  width: var(--width);
 }
 
 #cicle_3{
-  position: absolute;
-  --width: clamp(100px, 200px + 10vw, 360px);
-  width: var(--width);
-  margin-left: 55vw;
+  margin-left: clamp(10px, 10px + 1vw, 100px);
 }
 
 @media (max-width: 1100px){
