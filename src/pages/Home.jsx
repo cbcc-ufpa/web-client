@@ -1,11 +1,14 @@
 import React from "react";
+
+//Pages
 import "./Home.css";
+
+//Components
 import AreaCard from "../components/AreaCard";
 import CommentsCard from "../components/CommentsCard";
 import MemberCard from "../components/MemberCard";
 
 //SVG's
-import Lupa from "../assets/lupa.svg";
 import Star from "../assets/star.svg";
 import Arrow from "../assets/arrow.svg";
 import ArrowLilac from "../assets/arrow_lilac.svg";
@@ -18,43 +21,46 @@ import Data from '../assets/data.svg'
 import Shild from '../assets/shild.svg'
 import User from '../assets/user.svg'
 import Map from '../assets/map.png'
-import Wave from '../assets/wave.svg'
+import WaveUp from '../assets/wave_up.svg'
+import WaveDown from '../assets/wave_down.svg'
+import Cicle from '../assets/cicle.svg'
+import Logo from '../assets/logo.png'
 
 const Home = () => {
   return (
     <div className="container">
       <header>
-        <div className="header_icon">
-          <div></div>
-        </div>
+        <a href="https://github.com/jonas-al" className="header_icon">
+          <img src={Logo} alt="Logo" />
+        </a>
         <div className="header_links">
           <a href="https://github.com/jonas-al">Home</a>
           <a href="https://github.com/jonas-al">Features</a>
           <a href="https://github.com/jonas-al">Pricing</a>
           <a href="https://github.com/jonas-al">About Us</a>
-
-          {/*<img src={Lupa} alt="LupaIcon" />*/}
         </div>
       </header>
 
       <main>
         <div className="container_home">
           <div className="content_home">
-            <div className="localization">
-              <img src={Star} alt="Star Icon" />
-              <p>LOCALIZAÇÃO</p>
+            <div className="content_home_text">
+              <div className="localization">
+                <img src={Star} alt="Star Icon" />
+                <p>LOCALIZAÇÃO</p>
+              </div>
+              <h1>Lorem ipsum pellentesque nunc sapien</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Itaque, animi vitae placeat pariatur blanditiis nostrum. Quaerat
+                quo perferendis ut a, beatae in voluptas assumenda sit,
+                voluptatibus, ipsam totam accusamus quod!
+              </p>
+              <a href="https://github.com/jonas-al">
+                <p>Nos Conheça</p>
+                <img src={Arrow} alt="Arrow Icon" />
+              </a>
             </div>
-            <h1>Lorem ipsum pellentesque nunc sapien</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Itaque, animi vitae placeat pariatur blanditiis nostrum. Quaerat
-              quo perferendis ut a, beatae in voluptas assumenda sit,
-              voluptatibus, ipsam totam accusamus quod!
-            </p>
-            <a href="https://github.com/jonas-al">
-              <p>Nos Conheça</p>
-              <img src={Arrow} alt="Arrow Icon" />
-            </a>
             <div className="social_links">
               <a href="https://github.com/jonas-al" target="_blank" rel="extern">
                 <svg
@@ -109,30 +115,29 @@ const Home = () => {
             <img src={IA} alt="IA Perfil" />
           </div>
         </div>
-
-        <img src={Wave} alt="Wave"  className="wave"/>
-
+        <img className="wave_up" src={WaveUp} alt="Wave Up" />
       </main>
 
       <div className="main_areas">
-        <div className="phone"></div>
-
-        <div className="info_areas">
-          <div className="info_cards">
-            <AreaCard icon={Network} title={"Redes de Computadores"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
-            <AreaCard icon={Devops} title={"DevOps"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
-            <AreaCard icon={Dev} title={"Programação"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
-          </div>
-
-          <div className="info_cards">
-            <AreaCard icon={AI} title={"Inteligência Artificial"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
-            <AreaCard icon={Data} title={"Ciência de Dados"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
-            <AreaCard icon={Shild} title={"Segurança da Informação"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
+      <img className="wave_down" src={WaveDown} alt="Wave Up" />
+        <div className="main_areas_content">
+          <div className="phone"></div>
+          <div className="info_areas">
+            <div className="info_cards">
+              <AreaCard icon={Network} title={"Redes de Computadores"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
+              <AreaCard icon={Devops} title={"DevOps"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
+              <AreaCard icon={Dev} title={"Programação"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
+            </div>
+            <div className="info_cards">
+              <AreaCard icon={AI} title={"Inteligência Artificial"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
+              <AreaCard icon={Data} title={"Ciência de Dados"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
+              <AreaCard icon={Shild} title={"Segurança da Informação"} text={"Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons"} />
+            </div>
           </div>
         </div>
       </div>
 
-      {/*<div className="big_circle"></div>*/}
+      <img id="cicle_1" src={Cicle} alt="Cicle" />
 
       <div className="main_questions">
         <p>Centro Acadêmico</p>
@@ -153,8 +158,8 @@ const Home = () => {
         </div>
       </div>
 
-      {/*<div className="big_circle2"></div>
-      <div className="small_cicle"></div>*/}
+      <img id="cicle_2" src={Cicle} alt="Cicle" />
+      <img id="cicle_3" src={Cicle} alt="Cicle" />
 
       <div className="main_comments">
         <h1>Comentários de recém formados em CBCC</h1>
