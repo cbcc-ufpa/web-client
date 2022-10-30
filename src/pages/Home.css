@@ -24,7 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
+  height: calc(var(--vh, 1vh) * 10);
   padding: 0 60px;
   background-color: var(--purple);
 }
@@ -485,7 +485,7 @@ main .social_links a:hover svg {
 @media (max-width: 1100px){
 
   main{
-    height: 90vh;
+    height: calc(var(--vh, 1vh) * 90);
   }
 
   .hero_rigth img{
@@ -588,7 +588,6 @@ main .social_links a:hover svg {
 @media(max-width: 500px){
   main{
     padding-top: 0px;
-    height: 75vh;
   }
 
   main .container_home{
