@@ -469,7 +469,7 @@ main .social_links a:hover svg {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   margin-top: -50px;  
 }
 
@@ -554,6 +554,10 @@ main .social_links a:hover svg {
 }
 
 @media(max-width: 550px){
+  html, body{
+    overflow-x: hidden;
+  }
+
   header .header_links a{
     margin-left: 10px;
   }
@@ -584,7 +588,7 @@ main .social_links a:hover svg {
 @media(max-width: 500px){
   main{
     padding-top: 0px;
-    height: 85vh;
+    height: 75vh;
   }
 
   main .container_home{
@@ -592,7 +596,7 @@ main .social_links a:hover svg {
   }
 
   .social_links {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
   }
 }
 
