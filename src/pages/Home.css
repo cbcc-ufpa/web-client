@@ -51,7 +51,6 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 90vh;
   padding: 20px 0 0 0;
   background: linear-gradient(180deg, var(--purple) 0%, var(--purple) 35%, var(--blue) 100%);
 }
@@ -484,6 +483,11 @@ main .social_links a:hover svg {
 }
 
 @media (max-width: 1100px){
+
+  main{
+    height: 90vh;
+  }
+
   .hero_rigth img{
     width: 0;
   }
@@ -580,7 +584,7 @@ main .social_links a:hover svg {
 @media(max-width: 500px){
   main{
     padding-top: 0px;
-    height: 88vh;
+    height: 85vh;
   }
 
   main .container_home{
