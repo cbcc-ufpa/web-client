@@ -27,10 +27,10 @@ import Cicle from '../assets/cicle.svg'
 import LittleCicle from '../assets/little_cicle.svg'
 import Logo from '../assets/logo.png'
 
-const Home = () => {
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
+const Home = () => {
   return (
     <div className="container">
       <header>
