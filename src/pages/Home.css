@@ -298,6 +298,10 @@ main .social_links a:hover svg {
   box-sizing: border-box;
 }
 
+.slick-list{
+  width: 100%;
+}
+
 .comments_section::before{
   width: 30%;
   height: 350px;
@@ -546,6 +550,9 @@ main .social_links a:hover svg {
 
   .info_cards{
     margin-left: 100px;
+  }
+  .main_comments {
+    margin: 160px 0px 100px 0px;
   }
 }
 

@@ -120,7 +120,7 @@ export const SimpleSlider = () => {
                 centerPadding: '20px',
                 slidesToShow: 1
             }
-            } 
+            }
         ]
     };
 
