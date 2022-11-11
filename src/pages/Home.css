@@ -262,7 +262,20 @@ main .social_links a:hover svg {
 .main_comments{
   text-align: center;
   background-color: var(--white);
-  margin: 160px 25px 200px 25px;
+  margin: 160px 0px 200px 0px;
+}
+
+.comment_carrousel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 350px;
+  /*overflow-x: scroll;*/
+}
+
+.comment_carrousel::-webkit-scrollbar{
+  display: none;
 }
 
 .main_comments > h1{
@@ -277,27 +290,30 @@ main .social_links a:hover svg {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 100%;
+  padding: 0 30px;
 }
 
-.arrow_right, .arrow_left{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 65px;
-  min-height: 65px;
-  border-radius: 50%;
-  background-color: var(--lilac);
-  rotate: 180deg;
+.slick-slider{
+  width: 85%;
+  box-sizing: border-box;
 }
 
-.arrow_left{
-  rotate: 0deg;
+.comments_section::before{
+  width: 30%;
+  height: 350px;
+  position: absolute;
+  content: "";
+  right: 0%;
+  background: linear-gradient(to left, #f2f2f2 30%, transparent 100%);
+  z-index: 2;
 }
 
-.arrow_right img, .arrow_left img{
-  width: 32px;
-  height: 32px;
+.comments_section::after{
+  width: 30%;
+  height: 350px;
+  position: absolute;
+  content: "";
+  background: linear-gradient(90deg, #f2f2f2 30%, transparent 100%);
 }
 
 .main_map{
@@ -474,11 +490,16 @@ main .social_links a:hover svg {
 }
 
 #cicle_2{
+  z-index: 3;
+  position: absolute;
+  right: 0%;
   --width: clamp(100px, 10px + 8vw, 360px);
   width: var(--width);
 }
 
 #cicle_3{
+  position: relative;
+  top: 50px;
   margin-left: clamp(10px, 10px + 1vw, 100px);
 }
 
@@ -528,6 +549,15 @@ main .social_links a:hover svg {
   }
 }
 
+@media(max-width: 1000px){
+  .comments_section::after{
+    background: linear-gradient(90deg, #f2f2f2 0%, transparent 60%);
+  }
+  .comments_section::before{
+    background: linear-gradient(to left, #f2f2f2 0%, transparent 60%);
+  }
+}
+
 @media(max-width: 750px){
   .user_comment{
     width: 525px;
@@ -540,9 +570,23 @@ main .social_links a:hover svg {
   .social_links {
     margin-bottom: 20px;
   }
+
+  .slick-slider{
+    width: 100%;
+  }
+
+  .comments_section{
+    padding: 0px;
+  }
+  .comments_section::after{
+    background: linear-gradient(90deg, #f2f2f2 20%, transparent 100%);
+  }
+  .comments_section::before{
+    background: linear-gradient(to left, #f2f2f2 2%, transparent 100%);
+  }
 }
 
-@media(max-width: 630px){
+@media(max-width: 650px){
   .user_comment{
     width: 425px;
   }
@@ -607,15 +651,6 @@ main .social_links a:hover svg {
     padding: 10px;
   }
 
-  .arrow_right, .arrow_left{
-    min-width: 35px;
-    min-height: 35px;
-  }
-
-  .arrow_right img, .arrow_left img{
-    width: 20px;
-  }
-
   .main_map img{
     max-width: 100%;
     height: 250px;
@@ -635,6 +670,13 @@ main .social_links a:hover svg {
 
   main .container_home{
     padding-left: 30px;
+  }
+
+  .comments_section::after{
+    width: 50px;
+  }
+  .comments_section::before{
+    width: 50px;
   }
 }
 

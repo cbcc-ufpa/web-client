@@ -8,17 +8,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 350px;
-    height: 350px;
+    max-width: 350px;
+    min-height: 350px;
     border: 2px solid var(--softGray);
     border-radius: 15px;
-    padding: 25px;
-    margin: 0 30px;
+    padding: 25px 10px;
+    flex: none;
+    margin-right: 1vw;
+    gap: 15px;
 }
 
 .comment_card > p{
     font-weight: 600;
-    font-size: 24px;
+    font-size: clamp(1em, 1em + .4vw, 1.5em );
     line-height: 34px;
     color: var(--gray);
 }
@@ -27,6 +29,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
 .user_photo{
@@ -36,12 +39,14 @@
     min-width: 56px;
     min-height: 56px;
     border-radius: 50%;
-    background-color: var(--lilac);
-    margin-right: 20px;
+}
+
+.user_photo img{
+    width: 56px;
+    border-radius: 50%;
 }
 
 .user_info h2{
-    width: 500;
     font-size: 20px;
     line-height: 30px;
     color: #1A1A1A;
@@ -54,9 +59,27 @@
     color: #767676;
 }
 
-@media (max-width: 800px){
+@media (max-width: 1000px){
     .comment_card{
         padding: 10px;
         margin: 2px;
+    }
+    .user_info{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 650px){
+    .comment_card{
+        padding: 10px 0px;
+        margin: 10px;
+    }
+
+    .comment_card > p{
+        font-weight: 600;
+        font-size: 1.3em;
+        line-height: 34px;
+        color: var(--gray);
     }
 }

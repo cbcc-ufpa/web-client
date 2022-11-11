@@ -1,17 +1,19 @@
-import React from "react";
+import { useEffect, useRef } from "react";
+import { SimpleSlider } from "../components/SimpleSlider";
+
+//Data
+import data from "../data/users.json"
 
 //Pages
 import "./Home.css";
 
 //Components
 import AreaCard from "../components/AreaCard";
-import CommentsCard from "../components/CommentsCard";
 import MemberCard from "../components/MemberCard";
 
 //SVG's
 import Star from "../assets/star.svg";
 import Arrow from "../assets/arrow.svg";
-import ArrowLilac from "../assets/arrow_lilac.svg";
 import IA from "../assets/ia_perfil.svg";
 import Network from '../assets/network.svg'
 import Devops from '../assets/devops.svg'
@@ -31,6 +33,21 @@ let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 const Home = () => {
+  const usersData = data.users
+  const carrousel = useRef(null)
+
+  const handleLeftClick = (e) => {
+    e.preventDefault()
+    console.log(carrousel.current.offsetWidth)
+    carrousel.current.scrollLeft += carrousel.current.offsetWidth
+  }
+
+  const handleRightClick = (e) => {
+    e.preventDefault()
+    console.log(carrousel.current.offsetWidth)
+    carrousel.current.scrollLeft -= carrousel.current.offsetWidth
+  }
+
   return (
     <div className="container">
       <header>
@@ -149,15 +166,11 @@ const Home = () => {
         <div className="up">
           <MemberCard memberPhoto={User} memberName={"Samuel Willson"} memberJob={"Digital Artist"} />
           <MemberCard memberPhoto={User} memberName={"Angelina Hellhop"} memberJob={"UX/UI Designer"} />
-          {/*<MemberCard memberPhoto={User} memberName={"Kyle Generale"} memberJob={"Photographer"} />
-          <MemberCard memberPhoto={User} memberName={"Joey Taylor"} memberJob={"Chief SMM"} />*/}
         </div>
 
         <div className="down">
           <MemberCard memberPhoto={User} memberName={"Samuel Willson"} memberJob={"Digital Artist"} />
           <MemberCard memberPhoto={User} memberName={"Angelina Hellhop"} memberJob={"UX/UI Designer"} />
-          {/*<MemberCard memberPhoto={User} memberName={"Kyle Generale"} memberJob={"Photographer"} />
-          <MemberCard memberPhoto={User} memberName={"Joey Taylor"} memberJob={"Chief SMM"} />*/}
 
         </div>
       </div>
@@ -170,30 +183,8 @@ const Home = () => {
       <div className="main_comments">
         <h1>Comentários de recém formados em CBCC</h1>
         <div className="comments_section">
-          <div className="arrow_right">
-            <img src={ArrowLilac} alt="Arrow Icon" />
-          </div>
-
-          {/*<CommentsCard
-            comment={"Antes eu sofriah :,( ... agora eu sou friah"}
-            userName={"Gótica Taradah"}
-            userJob={"Digital Artist at Digital Group"}
-    userPhoto={User} />*/}
-
-          {/*<CommentsCard 
-            comment={"Puta, vagabunda, intere$$eira. Eu fazendo meu trabalho escutando só besteira"}
-            userName={"Luiza Sonza"}
-            userJob={"UX Designer at Digital Group"}
-    userPhoto={User} />*/}
-
-          <CommentsCard
-            comment={"Antes eu não era nada, agora sou Uber e garanto o pão de cada dia"}
-            userName={"Resque"}
-            userJob={"Photographer at Digital Group"}
-            userPhoto={User}/>
-
-          <div className="arrow_left">
-            <img src={ArrowLilac} alt="Arrow Icon" />
+          <div className="comment_carrousel" ref={carrousel}>
+            <SimpleSlider/>
           </div>
         </div>
       </div>
