@@ -190,7 +190,7 @@ const Home = () => {
       </div>
 
       <div className="main_map">
-        <h1>Mapa da Casa do Caralho aqui!!!</h1>
+        <h1>Venha nos conhecer!</h1>
         <img src={Map} alt="Map image" />
       </div>
 

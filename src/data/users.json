@@ -6,7 +6,7 @@
             "name": "Vinícius Botelho",
             "avatar_url": "https://avatars.githubusercontent.com/u/68855615?v=4",
             "company": "Freelancer",
-            "comment": "Antes eu não era nada, agora sou Uber e garanto o pão de cada dia"
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec."
         },
 
         {
@@ -15,7 +15,7 @@
             "name": "Clarice Mendes",
             "avatar_url": "https://avatars.githubusercontent.com/u/98920251?v=4",
             "company": "Back-ender por amor!",
-            "comment": "Antes eu sofriah :,( ... agora eu sou friah"
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec."
         },
 
         {
@@ -24,7 +24,7 @@
             "name": "João Paulo Rodrigues",
             "avatar_url": "https://avatars.githubusercontent.com/u/44072492?v=4",
             "company": "W3as",
-            "comment": "Antes eu não era nada, agora sou Uber e garanto o pão de cada dia"
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec."
         },
 
         {
@@ -32,8 +32,8 @@
             "login": "jonas-al",
             "name": "yonas",
             "avatar_url": "https://avatars.githubusercontent.com/u/72419151?v=4",
-            "company": "Vagabunde",
-            "comment": "Puta, vagabunda, intere$$eira. Eu fazendo meu trabalho escutando só besteira"
+            "company": "Estudante",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec."
         },
 
         {
@@ -41,17 +41,17 @@
             "login": "chsantos234",
             "name": "Camilo Santos",
             "avatar_url": "https://avatars.githubusercontent.com/u/77702696?v=4",
-            "company": "Vagabunde",
-            "comment": "Antes eu não era nada, agora sou Uber e garanto o pão de cada dia"
+            "company": "Estudante",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec."
         },
 
         {
             "id": 6,
-            "login": "gustavoresque",
-            "name": "Carlos Gustavo Resque",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1729921?v=4",
-            "company": "Uber",
-            "comment": "Antes eu não era nada, agora sou Uber e garanto o pão de cada dia"
+            "login": "alverad-katsuro",
+            "name": "Alfredo Gabriel",
+            "avatar_url": "https://avatars.githubusercontent.com/u/65864188?v=4",
+            "company": "Estudante",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec."
         }
     ]
 }
